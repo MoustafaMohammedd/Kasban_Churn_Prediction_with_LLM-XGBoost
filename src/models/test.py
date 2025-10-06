@@ -7,7 +7,7 @@ from src.utils.data_preprocessing_pipeline import X_train_final, y_train , X_tes
 import joblib
 from sklearn.metrics import  classification_report
 
-xgb_model = joblib.load('D:\Kasban_Churn_LLM\src\models\model_XGBoost.pkl')
+xgb_model = joblib.load('src/models/model_XGBoost.pkl')
 
 
 X_train_pred=xgb_model.predict(X_train_final)

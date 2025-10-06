@@ -7,7 +7,7 @@ from src.utils.data_preprocessing_pipeline import preprocess_new
 import joblib
 import pandas as pd
 
-xgb_model = joblib.load('D:\Kasban_Churn_LLM\src\models\model_XGBoost.pkl')
+xgb_model = joblib.load('src/models/model_XGBoost.pkl')
 
 def predict_churn(input_data) :
  

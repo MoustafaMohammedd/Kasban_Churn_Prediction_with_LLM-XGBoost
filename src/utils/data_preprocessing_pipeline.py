@@ -7,7 +7,7 @@ from sklearn_features.transformers import DataFrameSelector
 
 
 
-FILE_PATH = "D:\Kasban_Churn_LLM\data\WA_Fn-UseC_-Telco-Customer-Churn.csv"
+FILE_PATH = "data\WA_Fn-UseC_-Telco-Customer-Churn.csv"
 df = pd.read_csv(FILE_PATH)
 
 df.drop(columns=['customerID'], axis=1, inplace=True)

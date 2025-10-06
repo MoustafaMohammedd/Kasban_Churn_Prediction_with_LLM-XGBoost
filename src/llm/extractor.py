@@ -3,13 +3,16 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 
 from dotenv import load_dotenv
-load_dotenv("D:\Kasban_Churn_LLM\.env")
+load_dotenv(".env")
 import os
+
+
+#from schema import ClientFeatures
 
 if __name__ == "__main__":
     from schema import ClientFeatures
 else:
-    
+    #from schema import ClientFeatures
     from src.llm.schema import ClientFeatures
 
 

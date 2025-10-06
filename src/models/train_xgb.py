@@ -34,4 +34,4 @@ tuned_xgb = cross_val_score(estimator=best_xgb, X=X_train_final, y=y_train,
 print(f'Scores Using Tuned Tuned XGBoost --- {np.round(tuned_xgb, 4)}')
 print(f'Mean of Scores Using Tuned XGBoost --- {tuned_xgb.mean():.4f}')
 
-joblib.dump(best_xgb, 'D:\Kasban_Churn_LLM\src\models\model_XGBoost.pkl')
+joblib.dump(best_xgb, 'src\models\model_XGBoost.pkl')

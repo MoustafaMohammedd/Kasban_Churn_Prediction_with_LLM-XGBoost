@@ -2,7 +2,7 @@ import sys
 import os
 import pandas as pd
 from dotenv import load_dotenv
-load_dotenv("D:\Kasban_Churn_LLM\.env")
+load_dotenv(".env")
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
 from src.llm.extractor import extract_features

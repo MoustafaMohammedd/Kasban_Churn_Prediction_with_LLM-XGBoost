@@ -34,4 +34,4 @@ print(f'Scores Using Tuned RandomForest --- {np.round(f1_scores_tuned_forest, 4)
 print(f'Mean Scores Using Tuned RandomForest --- {f1_scores_tuned_forest.mean():.4f}')
 
 
-joblib.dump(best_forest, 'D:\Kasban_Churn_LLM\src\models\model_RF2.pkl')
+joblib.dump(best_forest, 'src\models\model_RF2.pkl')
