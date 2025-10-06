@@ -29,7 +29,7 @@ Instead of manually filling structured forms, the user can **write free-form tex
 ## 📂 Project Structure
 
 ```
-Kasban_Churn_LLM/
+Kasban_Churn_Prediction_with_LLM-XGBoost/
 │
 ├── requirements.txt            # Python dependencies
 ├── .env.example                # Example environment variables
@@ -38,7 +38,7 @@ Kasban_Churn_LLM/
 ├── data/                       # Raw dataset
 │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
 │
-├── src/
+└── src/
     ├── llm/                    # LLM extraction logic
     │   ├── schema.py           # Pydantic schema for customer features
     │   ├── extractor.py        # LangChain LLM + parser
@@ -60,7 +60,7 @@ Kasban_Churn_LLM/
     │── notebooks/              # Experiments
     │   └── EDA.ipynb
     │
-    ├── testing/                   
+    └── testing/                   
         ├── test_llm.py         # Test LLM feature extraction only
         ├── test_ml.py          # Test ML model predictions only
         └── test_full.py        # Test full pipeline (LLM → XGB → prediction)
