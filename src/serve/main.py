@@ -17,7 +17,12 @@ class ChurnRequest(BaseModel):
     
     
 app = FastAPI()
-@app.post("/")
+
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the Customer Churn Prediction API"}
+
+@app.post("/predict_churn")
 
 def predict_churn_endpoint(data: ChurnRequest):
 
