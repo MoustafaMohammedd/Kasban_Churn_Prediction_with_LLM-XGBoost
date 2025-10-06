@@ -173,8 +173,6 @@ POST request to `http://127.0.0.1:8000/docs
   python src/serve/test_llm_with_xgb.py
   ```
 
-```
-
 ---
 
 ## 📈 Next Steps
