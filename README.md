@@ -57,8 +57,14 @@ Kasban_Churn_LLM/
     │   ├── main.py             # FastAPI application
     │   └── test_llm_with_xgb.py# Test full pipeline (LLM → XGB)
     │
-    └── notebooks/              # Experiments
-       └── EDA.ipynb
+    │── notebooks/              # Experiments
+    │   └── EDA.ipynb
+    │
+    ├── testing/                   
+        ├── test_llm.py         # Test LLM feature extraction only
+        ├── test_ml.py          # Test ML model predictions only
+        └── test_full.py        # Test full pipeline (LLM → XGB → prediction)
+ 
 ```
 
 ---
@@ -158,19 +164,19 @@ POST request to `http://127.0.0.1:8000/docs
 * Test LLM feature extraction only:
 
   ```bash
-  python src/llm/test.py
+  python src/testing/test_llm.py
   ```
 
 * Test ML model predictions only:
 
   ```bash
-  python src/models/test.py
+  python src/testing/test_ml.py
   ```
 
 * Test full pipeline (LLM → XGB → prediction):
 
   ```bash
-  python src/serve/test_llm_with_xgb.py
+  python src/testing/test_full.py
   ```
 
 ---
